@@ -12,4 +12,6 @@ def sum_even_numbers(numbers):
 assert fibonacci_by_limit(90) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 assert sum_even_numbers(fibonacci_by_limit(90)) == 188
 
-print 'Result: %d' % sum_even_numbers(fibonacci_by_limit(4 * 10 ** 6))
+result = sum_even_numbers(fibonacci_by_limit(4 * 10 ** 6))
+print 'Result: %d' % result
+assert result == 4613732
