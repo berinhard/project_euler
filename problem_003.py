@@ -19,15 +19,16 @@ def largest_prime_factor(number):
         if is_prime(factor):
             return factor
 
-assert is_prime(1) is True
-assert is_prime(2) is True
-assert is_prime(3) is True
-assert is_prime(5) is True
-assert is_prime(6) is False
-assert is_prime(9) is False
-assert is_prime(49) is False
-assert largest_prime_factor(13195) == 29
+if __name__ == '__main__':
+    assert is_prime(1) is True
+    assert is_prime(2) is True
+    assert is_prime(3) is True
+    assert is_prime(5) is True
+    assert is_prime(6) is False
+    assert is_prime(9) is False
+    assert is_prime(49) is False
+    assert largest_prime_factor(13195) == 29
 
-result = largest_prime_factor(600851475143)
-print 'Result: %d' % result
-assert result == 6857
+    result = largest_prime_factor(600851475143)
+    print 'Result: %d' % result
+    assert result == 6857
